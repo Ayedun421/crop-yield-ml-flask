@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-2xl font-bold mb-4">Dataset Information</h2>
+
+<div class="bg-white p-6 rounded shadow">
+    <p class="mb-3">
+        The dataset used for training the machine learning model consists of
+        environmental and soil-related parameters collected or simulated from
+        realistic agricultural conditions.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-1">
+        <li>Rainfall (mm)</li>
+        <li>Temperature (°C)</li>
+        <li>Humidity (%)</li>
+        <li>Soil pH</li>
+        <li>Nitrogen, Phosphorus, Potassium (NPK)</li>
+        <li>Sunlight hours</li>
+        <li>Land area (hectares)</li>
+        <li>Crop type</li>
+    </ul>
+
+    <p class="mt-4 font-semibold">
+        Dataset Size: <span class="text-green-700">10,000 records</span>
+    </p>
+</div>
+{% endblock %}
