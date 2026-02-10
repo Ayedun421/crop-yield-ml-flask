@@ -8,7 +8,15 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load trained model
-model = joblib.load("crop_yield_model.pkl")
+# model = joblib.load("crop_yield_model.pkl")
+
+MODEL_PATH = "crop_yield_model.pkl"
+
+if not os.path.exists(MODEL_PATH):
+    raise Exception("Model file not found. Build failed to download it.")
+
+model = joblib.load(MODEL_PATH)
+
 
 
 @app.route("/", methods=["GET", "POST"])

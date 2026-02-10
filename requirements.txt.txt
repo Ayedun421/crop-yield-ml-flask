@@ -11,6 +11,7 @@ How to run:
 
 1. pip install pandas numpy scikit-learn joblib
 2. pip install "numpy<2" --force-reinstall
+3. pip install gdown
 3. pip install flask
 4. pip install gunicorn
 5. pip freeze > requirements.txt
